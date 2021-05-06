@@ -12,14 +12,25 @@ int main()
  {
        int n ;
        cin>>n ;
-       int arr[n+3];
-       map<int,int>m ;
+int a=0,b=0;
+
        for(int i=0 ; i<n ;i++)
        {
-             cin>>arr[i];
-             m[arr[i]]++ ;
+
+            int k ;
+            cin>>k ;
+     if(k==1)
+     {
+           a++ ;
+     }
+     else
+     {
+           b++ ;
+     }
+
        }
-      if((m[1]%2==0 && m[2]%2==0)|| (m[2]%2==1 && m[1]>1 &&m[1]%2==0))
+
+      if((a%2==0 && b%2==0)|| (b%2==1 && a>1 && a%2==0))
       {
             cout<<"YES" <<endl ;
       }
